@@ -61,7 +61,36 @@ o minimo para ter uma animação
     - quando irá starta: animation-delay
     - pausar ou iniciar: animation-play-state
  
+### Colacando variaveis no keyframes, para manipular um elemento de cada vez com o delay!
+  >  HTML <br>
+  
+                    <figure class="item" style="--delay: 1.4s">
+                      <img src="./assets/unsplash_LAY19dUD_ro.png" alt="" />
+                      <figcaption class="details">
+                        <h2>Organização e grids</h2>
+                        <div class="tags">
+                          <span>tag</span>
+                        </div>
+                      </figcaption>
+                    </figure>
+> css <br>
+
+        .item{
+            --delay: .2s;
+            animation: appear 1s var(--delay) backwards ;
+        }
+        @keyframes appear{
+        
+            0%{
+                opacity: 0;
+                transform: scale(0.7);
+            }
+        
+        }
+
   ### Shorthand
       animation: move 1s forwards alternate infinite, blink 100ms infinite;
+
+  
     
   
