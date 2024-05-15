@@ -21,3 +21,47 @@
 ### CSS transition
     transition: all 200ms ease-out;
 - colocando um tempo para fazer as transições de scale e cores!!
+
+### CSS animation
+> propriedade de animação: Keyframes <br/>
+> site de animações: animista.net
+
+o minimo para ter uma animação 
+
+- animation-name 
+- animation-duration
+- keyframes com o nome da animação
+  
+       .square {
+        animation-name: move;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        }
+            .square {
+            animation-name: move;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes move {
+          /* from */
+          0% {
+          }
+    
+          /* to */
+          100% {
+        transform: translateX(calc(100vw - 100% - 16px));
+          }
+                    }
+
+  ### Possibilidades animations:
+    - duração: animation-duration
+    - direção: animation-direction
+    - tempod eexecução: animation-iteration-count: infinite
+    - quando irá starta: animation-delay
+    - pausar ou iniciar: animation-play-state
+ 
+  ### Shorthand
+      animation: move 1s forwards alternate infinite, blink 100ms infinite;
+    
+  
